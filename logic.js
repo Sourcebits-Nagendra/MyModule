@@ -1,11 +1,23 @@
 define(function(require,exports,module){
-  var logic = function(){
+
+//‘use strict’;
+
+//alert();  
+
+var logic = function(){
+    //alert(1);
     var g = document.getElementsByTagName("input")[0];
     g.addEventListener("change", function(){
-      if (isNAN(g.value)){
-        alert("Enter digits only");
+      console.log(11);
+      console.log(g.value);
+      if (isNaN(g.value)){
+        
       }
     })
   };
-  return logic;
+//alert(2);
+  return logic();
+
+
+
 });
